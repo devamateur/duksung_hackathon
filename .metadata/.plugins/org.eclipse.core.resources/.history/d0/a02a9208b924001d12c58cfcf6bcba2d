@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
+        <script src="https://kit.fontawesome.com/eca5e2617c.js" crossorigin="anonymous"></script>
+        <title>Document</title>
+    <style>
+      ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      width: 200px;
+      background-color:white;
+      }
+      li a {
+          display: block;
+          color: #000;
+          padding: 8px 16px;
+          text-decoration: none;
+          height:40px;
+          text-align: center;
+          line-height: 40px;
+      }
+      
+      li a:hover:not(.active) {
+          background-color: #555;
+          color: white;
+      }
+      #MenuBar{
+        display:none;
+      }
+  
+      .v1_70{
+        text-align:right;
+        background: rgba(148,7,63,1);
+        color:white;
+        padding-right:15px;
+        height:56px;
+        line-height: 56px;
+      }
+  
+    </style>
+    </head>
+    <body>
+        <div class="v4_980">
+            <ul id="MenuBar" style="position: fixed; z-index: 1; display: none;">
+                <li><div class="v1_70"><i class="fa-solid fa-xmark fa-4x" onclick="hideDetail()"></i></div></li>
+                <li><a href="menu_order_ramen.html">메뉴/주문</a></li>
+                <li><a href="filtering.html">필터링</a></li>
+                <li><a href="community.html">커뮤니티</a></li>
+                <li><a href="q_a.html">Q&amp;A</a></li>
+              </ul>
+            <div class="v4_981"></div>
+            <div class="v4_982"></div>
+            <div id="v1_9" style="display: block;">
+                <i class="fa-solid fa-bars fa-2x" onclick="displayDetail()"></i>
+              </div>
+            <div class="v4_987">
+                <i class="fa-solid fa-magnifying-glass fa-2x"></i>
+            </div>
+            <div class="v4_994"></div>
+            <div class="v4_995" onclick="location.href='main.html'" style="cursor:pointer;"></div>
+            <span class="v4_999">000님 환영합니다</span>
+            <div class="v4_1014"></div>
+            <div class="v4_1017">
+                <div class="v4_1015"></div>
+                <div class="v4_1016"></div>
+            </div>
+            <span class="v4_1018">000님</span>
+            <div class="v4_1021"></div>
+            <div class="v4_1031"></div>
+            <div class="v4_1022"></div>
+            <div class="v4_1032"></div>
+            <div class="v4_1023"></div>
+            <div class="v4_1033"></div>
+            <span class="v4_1025">알레르기/비선호</span>
+            <span class="v4_1027">주문 내역</span>
+            <span class="v4_1029">개인정보 수정</span>
+            <span class="v4_1026">커뮤니티 글 관리</span>
+            <span class="v4_1028">Q&A</span>
+            <span class="v4_1030">로그아웃</span>
+            <span class="v4_1034">마이페이지</span>
+        </div>
+    </body>
+    <script>
+          
+        function displayDetail(){
+            var MenuBar=document.getElementById("MenuBar");
+            MenuBar.style.display="block";
+      var Bar=document.getElementById("v1_9");
+      Bar.style.display="none";
+        }
+
+        function hideDetail(){
+            var MenuBar=document.getElementById("MenuBar");
+            MenuBar.style.display="none";
+      var Bar=document.getElementById("v1_9");
+      Bar.style.display="block";
+        }
+
+        
+
+        
+    </script>
+</html> 
+<br/><br/> <style>* {
+    box-sizing: border-box;
+  }
+  body {
+    font-size: 14px;
+  }
+  .v4_980 {
+    width: 360px;
+    height: 800px;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+  }
+  .v4_981 {
+    width: 208px;
+    height: 50px;
+    background: rgba(217,217,217,1);
+    opacity: 1;
+    position: absolute;
+    top: 65px;
+    left: 76px;
+    overflow: hidden;
+  }
+  .v4_982 {
+    width: 360px;
+    height: 40px;
+    background: rgba(148,7,63,1);
+    opacity: 1;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+  }
+  .v4_983 {
+    width: 30px;
+    height: 25px;
+    
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 77px;
+    left: 15px;
+    overflow: hidden;
+  }
+  .v4_984 {
+    width: 18px;
+    height: 3px;
+    background: rgba(0,0,0,1);
+    opacity: 1;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+  }
+  .v4_985 {
+    width: 18px;
+    height: 3px;
+    background: rgba(0,0,0,1);
+    opacity: 1;
+    position: absolute;
+    top: 6px;
+    left: 0px;
+    overflow: hidden;
+  }
+  .v4_986 {
+    width: 18px;
+    height: 3px;
+    background: rgba(0,0,0,1);
+    opacity: 1;
+    position: absolute;
+    top: 12px;
+    left: 0px;
+    overflow: hidden;
+  }
+  .v4_987 {
+    width: 35px;
+    height: 28px;
+    
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 75px;
+    left: 305px;
+    overflow: hidden;
+  }
+  .v4_988 {
+    width: 4px;
+    height: 13px;
+    background: rgba(0,0,0,1);
+    opacity: 1;
+    position: absolute;
+    top: 18px;
+    left: 16px;
+    border: 2px solid rgba(0,0,0,1);
+    transform: rotate(-38deg);
+  }
+  .v4_989 {
+    width: 21px;
+    height: 21px;
+    background: rgba(0,0,0,1);
+    opacity: 1;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    border-radius: 50%;
+  }
+  .v4_990 {
+    width: 20px;
+    height: 20px;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    border-radius: 50%;
+  }
+  .v4_994 {
+    width: 360px;
+    height: 100px;
+    background: rgba(217,217,217,1);
+    opacity: 1;
+    position: absolute;
+    top: 924px;
+    left: 0px;
+    overflow: hidden;
+  }
+  .v4_995 {
+    width: 210px;
+    height: 59px;
+    background: url("ds_logo.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 61px;
+    left: 75px;
+    overflow: hidden;
+  }
+  .v4_999 {
+    width: 132px;
+    color: rgba(255,255,255,1);
+    position: absolute;
+    top: 17px;
+    left: 228px;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 12px;
+    opacity: 1;
+    text-align: left;
+  }
+  .v4_1014 {
+    width: 96px;
+    height: 96px;
+    background: rgba(217,217,217,1);
+    opacity: 1;
+    position: absolute;
+    top: 233px;
+    left: 131px;
+    border-radius: 50%;
+  }
+  .v4_1017 {
+    width: 56px;
+    height: 79px;
+    background: url("../images/v4_1017.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 261px;
+    left: 151px;
+    overflow: hidden;
+  }
+  .v4_1015 {
+    width: 32px;
+    height: 32px;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 12px;
+    border-radius: 50%;
+  }
+  .v4_1016 {
+    width: 56px;
+    height: 56px;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: absolute;
+    top: 23px;
+    left: 0px;
+    border-radius: 50%;
+  }
+  .v4_1018 {
+    width: 136px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 340px;
+    left: 112px;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 24px;
+    opacity: 1;
+    text-align: center;
+  }
+  .v4_1021 {
+    width: 82px;
+    height: 49px;
+    background: rgba(217,217,217,1);
+    opacity: 1;
+    position: absolute;
+    top: 407px;
+    left: 239px;
+    overflow: hidden;
+  }
+  .v4_1031 {
+    width: 82px;
+    height: 49px;
+    background: rgba(217,217,217,1);
+    opacity: 1;
+    position: absolute;
+    top: 481px;
+    left: 238px;
+    overflow: hidden;
+  }
+  .v4_1022 {
+    width: 83px;
+    height: 49px;
+    background: rgba(217,217,217,1);
+    opacity: 1;
+    position: absolute;
+    top: 407px;
+    left: 138px;
+    overflow: hidden;
+  }
+  .v4_1032 {
+    width: 83px;
+    height: 49px;
+    background: rgba(217,217,217,1);
+    opacity: 1;
+    position: absolute;
+    top: 481px;
+    left: 137px;
+    overflow: hidden;
+  }
+  .v4_1023 {
+    width: 84px;
+    height: 48px;
+    background: rgba(217,217,217,1);
+    opacity: 1;
+    position: absolute;
+    top: 407px;
+    left: 36px;
+    overflow: hidden;
+  }
+  .v4_1033 {
+    width: 84px;
+    height: 48px;
+    background: rgba(217,217,217,1);
+    opacity: 1;
+    position: absolute;
+    top: 481px;
+    left: 35px;
+    overflow: hidden;
+  }
+  .v4_1025 {
+    width: 95px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 439px;
+    left: 30px;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 11px;
+    opacity: 1;
+    text-align: center;
+  }
+  .v4_1027 {
+    width: 73px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 441px;
+    left: 143px;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 11px;
+    opacity: 1;
+    text-align: center;
+  }
+  .v4_1029 {
+    width: 73px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 440px;
+    left: 246px;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 11px;
+    opacity: 1;
+    text-align: center;
+  }
+  .v4_1026 {
+    width: 105px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 513px;
+    left: 25px;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 11px;
+    opacity: 1;
+    text-align: center;
+  }
+  .v4_1028 {
+    width: 61px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 513px;
+    left: 148px;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 11px;
+    opacity: 1;
+    text-align: center;
+  }
+  .v4_1030 {
+    width: 131px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 513px;
+    left: 214px;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 11px;
+    opacity: 1;
+    text-align: center;
+  }
+  .v4_1034 {
+    width: 30vw;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 171px;
+    left: 19px;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 6vw;
+    opacity: 1;
+    text-align: left;
+  }
+  </style>

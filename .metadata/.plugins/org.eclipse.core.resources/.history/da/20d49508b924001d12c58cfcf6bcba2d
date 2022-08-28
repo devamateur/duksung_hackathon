@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
+        <script src="https://kit.fontawesome.com/eca5e2617c.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="v4_810">
+            <div class="v4_811"></div>
+            <div class="v4_812"></div>
+            <div class="v4_813">
+                <div class="v4_814"></div>
+                <div class="v4_815"></div>
+                <div class="v4_816"></div>
+            </div>
+            <div class="v4_817">
+                <div class="v4_818"></div>
+                <div class="v4_819"></div>
+                <div class="v4_820"></div>
+            </div>
+            <div class="v4_821"></div>
+            <div class="v4_822"></div>
+            <div class="v4_823"></div>
+            <span class="v4_824">로그인</span>
+            <span class="v4_825">회원가입</span>
+            <span class="v4_826">오늘의 BEST</span>
+            <div class="v4_827"></div>
+            <div class="v4_828"></div>
+            <div class="v4_829"></div>
+            <div class="v4_830"></div>
+            <div class="v4_831"></div>
+            <div class="v4_832"></div>
+            <div class="v4_833"></div>
+            <div class="v4_834"></div>
+            <div class="v4_835"></div>
+            <div class="v4_836"></div>
+            <div class="v4_837"></div>
+            <div class="v4_838"></div>
+            <span class="v4_839">메뉴 이름</span>
+            <span class="v4_840">메뉴 이름</span>
+            <span class="v4_841">메뉴 이름</span>
+            <span class="v4_842">메뉴 이름</span>
+            <span class="v4_843">메뉴 이름</span>
+            <span class="v4_844">메뉴 이름</span>
+            <span class="v4_845">메뉴 이름</span>
+            <span class="v4_846">메뉴 이름</span>
+            <span class="v4_847">메뉴 이름</span>
+            <span class="v4_848">메뉴 이름</span>
+            <span class="v4_849">메뉴 이름</span>
+            <span class="v4_850">메뉴 이름</span>
+        </div>
+    </body>
+</html> 
+<br/><br/> <style>* {
+    box-sizing: border-box;
+  }
+  body {
+    font-size: 14px;
+  }
+  .v4_810 {
+    width: 360px;
+    height: 1024px;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+  }
+  .v4_811 {
+    width: 208px;
+    height: 50px;
+    background: rgba(217,217,217,1);
+    opacity: 1;
+    position: absolute;
+    top: 65px;
+    left: 76px;
+    overflow: hidden;
+  }
+  .v4_812 {
+    width: 360px;
+    height: 40px;
+    background: rgba(148,7,63,1);
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+  }
+  .v4_813 {
+    width: 18px;
+    height: 15px;
+    background: url("../images/v4_813.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 77px;
+    left: 19px;
+    overflow: hidden;
+  }
+  .v4_814 {
+    width: 18px;
+    height: 3px;
+    background: rgba(0,0,0,1);
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+  }
+  .v4_815 {
+    width: 18px;
+    height: 3px;
+    background: rgba(0,0,0,1);
+    opacity: 1;
+    position: absolute;
+    top: 6px;
+    left: 0px;
+    overflow: hidden;
+  }
+  .v4_816 {
+    width: 18px;
+    height: 3px;
+    background: rgba(0,0,0,1);
+    opacity: 1;
+    position: absolute;
+    top: 12px;
+    left: 0px;
+    overflow: hidden;
+  }
+  .v4_817 {
+    width: 27px;
+    height: 28px;
+    background: url("../images/v4_817.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 71px;
+    left: 318px;
+    overflow: hidden;
+  }
+  .v4_818 {
+    width: 4px;
+    height: 13px;
+    background: rgba(0,0,0,1);
+    opacity: 1;
+    position: absolute;
+    top: 18px;
+    left: 16px;
+    border: 2px solid rgba(0,0,0,1);
+    transform: rotate(-38deg);
+  }
+  .v4_819 {
+    width: 21px;
+    height: 21px;
+    background: rgba(0,0,0,1);
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 50%;
+  }
+  .v4_820 {
+    width: 20px;
+    height: 20px;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    border-radius: 50%;
+  }
+  .v4_821 {
+    width: 360px;
+    height: 553px;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: absolute;
+    top: 245px;
+    left: 0px;
+    border: 1px solid rgba(0,0,0,1);
+    overflow: hidden;
+  }
+  .v4_822 {
+    width: 360px;
+    height: 100px;
+    background: rgba(217,217,217,1);
+    opacity: 1;
+    position: absolute;
+    top: 924px;
+    left: 0px;
+    overflow: hidden;
+  }
+  .v4_823 {
+    width: 207px;
+    height: 59px;
+    background: url("../images/v4_823.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 61px;
+    left: 77px;
+    overflow: hidden;
+  }
+  .v4_824 {
+    width: 56px;
+    color: rgba(255,255,255,1);
+    position: absolute;
+    top: 17px;
+    left: 228px;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 12px;
+    opacity: 1;
+    text-align: center;
+  }
+  .v4_825 {
+    width: 56px;
+    color: rgba(255,255,255,1);
+    position: absolute;
+    top: 17px;
+    left: 285px;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 12px;
+    opacity: 1;
+    text-align: center;
+  }
+  .v4_826 {
+    width: 40vw;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 171px;
+    left: 19px;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 6vw;
+    opacity: 1;
+    text-align: left;
+  }
+  .v4_827 {
+    width: 72px;
+    height: 72px;
+    background: rgba(217,217,217,1);
+    opacity: 1;
+    position: absolute;
+    top: 266px;
+    left: 30px;
+    border-radius: 50%;
+  }
+  .v4_828 {
+    width: 72px;
+    height: 72px;
+    background: rgba(217,217,217,1);
+    opacity: 1;
+    position: absolute;
+    top: 384px;
+    left: 30px;
+    border-radius: 50%;
+  }
+  .v4_829 {
+    width: 72px;
+    height: 72px;
+    background: rgba(217,217,217,1);
+    opacity: 1;
+    position: absolute;
+    top: 502px;
+    left: 30px;
+    border-radius: 50%;
+  }
+  .v4_830 {
+    width: 72px;
+    height: 72px;
+    background: rgba(217,217,217,1);
+    opacity: 1;
+    position: absolute;
+    top: 620px;
+    left: 30px;
+    border-radius: 50%;
+  }
+  .v4_831 {
+    width: 72px;
+    height: 72px;
+    background: rgba(217,217,217,1);
+    opacity: 1;
+    position: absolute;
+    top: 266px;
+    left: 142px;
+    border-radius: 50%;
+  }
+  .v4_832 {
+    width: 72px;
+    height: 72px;
+    background: rgba(217,217,217,1);
+    opacity: 1;
+    position: absolute;
+    top: 384px;
+    left: 142px;
+    border-radius: 50%;
+  }
+  .v4_833 {
+    width: 72px;
+    height: 72px;
+    background: rgba(217,217,217,1);
+    opacity: 1;
+    position: absolute;
+    top: 502px;
+    left: 142px;
+    border-radius: 50%;
+  }
+  .v4_834 {
+    width: 72px;
+    height: 72px;
+    background: rgba(217,217,217,1);
+    opacity: 1;
+    position: absolute;
+    top: 620px;
+    left: 142px;
+    border-radius: 50%;
+  }
+  .v4_835 {
+    width: 72px;
+    height: 72px;
+    background: rgba(217,217,217,1);
+    opacity: 1;
+    position: absolute;
+    top: 266px;
+    left: 254px;
+    border-radius: 50%;
+  }
+  .v4_836 {
+    width: 72px;
+    height: 72px;
+    background: rgba(217,217,217,1);
+    opacity: 1;
+    position: absolute;
+    top: 384px;
+    left: 252px;
+    border-radius: 50%;
+  }
+  .v4_837 {
+    width: 72px;
+    height: 72px;
+    background: rgba(217,217,217,1);
+    opacity: 1;
+    position: absolute;
+    top: 502px;
+    left: 252px;
+    border-radius: 50%;
+  }
+  .v4_838 {
+    width: 72px;
+    height: 72px;
+    background: rgba(217,217,217,1);
+    opacity: 1;
+    position: absolute;
+    top: 620px;
+    left: 252px;
+    border-radius: 50%;
+  }
+  .v4_839 {
+    width: 95px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 346px;
+    left: 37px;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 15px;
+    opacity: 1;
+    text-align: left;
+  }
+  .v4_840 {
+    width: 95px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 464px;
+    left: 35px;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 15px;
+    opacity: 1;
+    text-align: left;
+  }
+  .v4_841 {
+    width: 95px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 582px;
+    left: 35px;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 15px;
+    opacity: 1;
+    text-align: left;
+  }
+  .v4_842 {
+    width: 95px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 700px;
+    left: 37px;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 15px;
+    opacity: 1;
+    text-align: left;
+  }
+  .v4_843 {
+    width: 95px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 346px;
+    left: 148px;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 15px;
+    opacity: 1;
+    text-align: left;
+  }
+  .v4_844 {
+    width: 95px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 464px;
+    left: 146px;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 15px;
+    opacity: 1;
+    text-align: left;
+  }
+  .v4_845 {
+    width: 95px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 582px;
+    left: 146px;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 15px;
+    opacity: 1;
+    text-align: left;
+  }
+  .v4_846 {
+    width: 95px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 700px;
+    left: 148px;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 15px;
+    opacity: 1;
+    text-align: left;
+  }
+  .v4_847 {
+    width: 95px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 346px;
+    left: 255px;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 15px;
+    opacity: 1;
+    text-align: left;
+  }
+  .v4_848 {
+    width: 95px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 464px;
+    left: 255px;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 15px;
+    opacity: 1;
+    text-align: left;
+  }
+  .v4_849 {
+    width: 95px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 582px;
+    left: 255px;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 15px;
+    opacity: 1;
+    text-align: left;
+  }
+  .v4_850 {
+    width: 95px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 700px;
+    left: 255px;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 15px;
+    opacity: 1;
+    text-align: left;
+  }
+  </style>

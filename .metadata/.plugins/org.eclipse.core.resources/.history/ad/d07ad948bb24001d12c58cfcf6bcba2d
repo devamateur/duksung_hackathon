@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
+        <script src="https://kit.fontawesome.com/eca5e2617c.js" crossorigin="anonymous"></script>
+        <title>Document</title>
+    <style>
+      ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      width: 200px;
+      background-color:white;
+      }
+      li a {
+          display: block;
+          color: #000;
+          padding: 8px 16px;
+          text-decoration: none;
+          height:40px;
+          text-align: center;
+          line-height: 40px;
+      }
+      
+      li a:hover:not(.active) {
+          background-color: #555;
+          color: white;
+      }
+      #MenuBar{
+        display:none;
+      }
+  
+      .v1_70{
+        text-align:right;
+        background: rgba(148,7,63,1);
+        color:white;
+        padding-right:15px;
+        height:56px;
+        line-height: 56px;
+      }
+  
+    </style>
+    </head>
+    <body>
+        <div class="v1_494">
+            <ul id="MenuBar" style="position: fixed; z-index: 1; display: none;">
+                <li><div class="v1_70"><i class="fa-solid fa-xmark fa-4x" onclick="hideDetail()"></i></div></li>
+                <li><a href="menu_order_ramen.html">메뉴/주문</a></li>
+                <li><a href="filtering.html">필터링</a></li>
+                <li><a href="community.html">커뮤니티</a></li>
+                <li><a href="q_a.html">Q&amp;A</a></li>
+              </ul>
+            
+            <div class="v1_496"></div>
+            <div id="v1_9" style="display: block;">
+                <i class="fa-solid fa-bars fa-2x" onclick="displayDetail()"></i>
+              </div>
+            <div class="v1_501">
+                <i class="fa-solid fa-magnifying-glass fa-2x"></i>
+            </div>
+            <div class="v1_505"></div>
+            <div class="v1_506"></div>
+            <div class="v1_495"></div>
+            <div class="v1_507" onclick="location.href='main.html'" style="cursor:pointer;"></div>
+            <span class="v1_516">필터링</span>
+            <div class="v1_523"></div>
+            <div class="v1_524"></div>
+            <div class="v1_525"></div>
+            <div class="v1_526"></div>
+            <div class="v1_527"></div>
+            <div class="v1_528"></div>
+            <div class="v1_529"></div>
+            <div class="v1_530"></div>
+            <div class="v1_531"></div>
+            <div class="v1_532"></div>
+            <div class="v1_533"></div>
+            <div class="v1_534"></div>
+            <span class="v1_535">메뉴 이름</span>
+            <span class="v1_536">메뉴 이름</span>
+            <span class="v1_537">메뉴 이름</span>
+            <span class="v1_538">메뉴 이름</span>
+            <span class="v1_539">메뉴 이름</span>
+            <span class="v1_540">메뉴 이름</span>
+            <span class="v1_541">메뉴 이름</span>
+            <span class="v1_542">메뉴 이름</span>
+            <span class="v1_543">메뉴 이름</span>
+            <span class="v1_544">메뉴 이름</span>
+            <span class="v1_545">메뉴 이름</span>
+            <span class="v1_546">메뉴 이름</span>
+            <style>
+            select {
+                width:100px;
+                padding: .8em .5em; 
+                border: 1px solid #999;
+                font-family: inherit;  
+                border-radius: 15px; 
+            }    
+            </style>
+            <div class="v1_547">
+              <select onchange="if(this.value) location.href=(this.value);">
+                <option value="filtering_include.html"><a></a>포함</option>
+                <option selected value="filtering.html">미포함</option>
+                <option value="filtering_total.html">전체</option>
+              </select>
+            </div>
+            <div class="v4_593"></div>
+            <span class="v4_594">00,000,00이 미포함된 식품입니다</span>
+            <span class="v4_1482">000님 환영합니다</span>
+        </div>
+        <script>
+          
+            function displayDetail(){
+                var MenuBar=document.getElementById("MenuBar");
+                MenuBar.style.display="block";
+          var Bar=document.getElementById("v1_9");
+          Bar.style.display="none";
+            }
+    
+            function hideDetail(){
+                var MenuBar=document.getElementById("MenuBar");
+                MenuBar.style.display="none";
+          var Bar=document.getElementById("v1_9");
+          Bar.style.display="block";
+            }
+    
+            
+    
+            
+        </script>
+    </body>
+</html> 
+    <br/><br/> <style>* {
+    box-sizing: border-box;
+  }
+  body {
+    font-size: 14px;
+  }
+  .v1_494 {
+    width: 360px;
+    height: 1024px;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+  }
+  .v1_495 {
+    width: 208px;
+    height: 50px;
+    background: rgba(217,217,217,1);
+    opacity: 1;
+    position: absolute;
+    top: 65px;
+    left: 76px;
+    overflow: hidden;
+  }
+  .v1_496 {
+    width: 360px;
+    height: 40px;
+    background: rgba(148,7,63,1);
+    opacity: 1;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+  }
+  .v1_497 {
+    width: 30px;
+    height: 25px;
+            
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 77px;
+    left: 15px;
+    overflow: hidden;
+  }
+  .v1_498 {
+    width: 18px;
+    height: 3px;
+    background: rgba(0,0,0,1);
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+  }
+  .v1_499 {
+    width: 18px;
+    height: 3px;
+    background: rgba(0,0,0,1);
+    opacity: 1;
+    position: absolute;
+    top: 6px;
+    left: 0px;
+    overflow: hidden;
+  }
+  .v1_500 {
+    width: 18px;
+    height: 3px;
+    background: rgba(0,0,0,1);
+    opacity: 1;
+    position: absolute;
+    top: 12px;
+    left: 0px;
+    overflow: hidden;
+  }
+  .v1_501 {
+    width: 35px;
+    height: 28px;
+            
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 75px;
+    left: 305px;
+    overflow: hidden;
+  }
+  .v1_502 {
+    width: 4px;
+    height: 13px;
+    background: rgba(0,0,0,1);
+    opacity: 1;
+    position: absolute;
+    top: 18px;
+    left: 15px;
+    border: 2px solid rgba(0,0,0,1);
+    transform: rotate(-38deg);
+  }
+  .v1_503 {
+    width: 21px;
+    height: 21px;
+    background: rgba(0,0,0,1);
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 50%;
+  }
+  .v1_504 {
+    width: 20px;
+    height: 20px;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    border-radius: 50%;
+  }
+  .v1_505 {
+    width: 360px;
+    height: 553px;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: absolute;
+    top: 250px;
+    left: 0px;
+    border: 1px solid rgba(0,0,0,1);
+    overflow: hidden;
+  }
+  .v1_506 {
+    width: 360px;
+    height: 100px;
+    background: rgba(217,217,217,1);
+    opacity: 1;
+    position: absolute;
+    top: 924px;
+    left: 0px;
+    overflow: hidden;
+  }
+  .v1_507 {
+    width: 210px;
+    height: 59px;
+    background: url("ds_logo.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 61px;
+    left: 75px;
+    overflow: hidden;
+  }
+  .v1_516 {
+    width: 30vw;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 171px;
+    left: 19px;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 6vw;
+    opacity: 1;
+    text-align: left;
+  }
+  .v1_523 {
+    width: 72px;
+    height: 72px;
+    background: rgba(217,217,217,1);
+    opacity: 1;
+    position: absolute;
+    top: 307px;
+    left: 30px;
+    border-radius: 50%;
+  }
+  .v1_524 {
+    width: 72px;
+    height: 72px;
+    background: rgba(217,217,217,1);
+    opacity: 1;
+    position: absolute;
+    top: 425px;
+    left: 28px;
+    border-radius: 50%;
+  }
+  .v1_525 {
+    width: 72px;
+    height: 72px;
+    background: rgba(217,217,217,1);
+    opacity: 1;
+    position: absolute;
+    top: 543px;
+    left: 28px;
+    border-radius: 50%;
+  }
+  .v1_526 {
+    width: 72px;
+    height: 72px;
+    background: rgba(217,217,217,1);
+    opacity: 1;
+    position: absolute;
+    top: 661px;
+    left: 29px;
+    border-radius: 50%;
+  }
+  .v1_527 {
+    width: 72px;
+    height: 72px;
+    background: rgba(217,217,217,1);
+    opacity: 1;
+    position: absolute;
+    top: 307px;
+    left: 142px;
+    border-radius: 50%;
+  }
+  .v1_528 {
+    width: 72px;
+    height: 72px;
+    background: rgba(217,217,217,1);
+    opacity: 1;
+    position: absolute;
+    top: 425px;
+    left: 140px;
+    border-radius: 50%;
+  }
+  .v1_529 {
+    width: 72px;
+    height: 72px;
+    background: rgba(217,217,217,1);
+    opacity: 1;
+    position: absolute;
+    top: 543px;
+    left: 140px;
+    border-radius: 50%;
+  }
+  .v1_530 {
+    width: 72px;
+    height: 72px;
+    background: rgba(217,217,217,1);
+    opacity: 1;
+    position: absolute;
+    top: 661px;
+    left: 141px;
+    border-radius: 50%;
+  }
+  .v1_531 {
+    width: 72px;
+    height: 72px;
+    background: rgba(217,217,217,1);
+    opacity: 1;
+    position: absolute;
+    top: 307px;
+    left: 254px;
+    border-radius: 50%;
+  }
+  .v1_532 {
+    width: 72px;
+    height: 72px;
+    background: rgba(217,217,217,1);
+    opacity: 1;
+    position: absolute;
+    top: 425px;
+    left: 252px;
+    border-radius: 50%;
+  }
+  .v1_533 {
+    width: 72px;
+    height: 72px;
+    background: rgba(217,217,217,1);
+    opacity: 1;
+    position: absolute;
+    top: 543px;
+    left: 252px;
+    border-radius: 50%;
+  }
+  .v1_534 {
+    width: 72px;
+    height: 72px;
+    background: rgba(217,217,217,1);
+    opacity: 1;
+    position: absolute;
+    top: 661px;
+    left: 253px;
+    border-radius: 50%;
+  }
+  .v1_535 {
+    width: 95px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 387px;
+    left: 37px;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 15px;
+    opacity: 1;
+    text-align: left;
+  }
+  .v1_536 {
+    width: 95px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 505px;
+    left: 35px;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 15px;
+    opacity: 1;
+    text-align: left;
+  }
+  .v1_537 {
+    width: 95px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 623px;
+    left: 35px;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 15px;
+    opacity: 1;
+    text-align: left;
+  }
+  .v1_538 {
+    width: 95px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 741px;
+    left: 36px;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 15px;
+    opacity: 1;
+    text-align: left;
+  }
+  .v1_539 {
+    width: 95px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 387px;
+    left: 148px;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 15px;
+    opacity: 1;
+    text-align: left;
+  }
+  .v1_540 {
+    width: 95px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 505px;
+    left: 146px;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 15px;
+    opacity: 1;
+    text-align: left;
+  }
+  .v1_541 {
+    width: 95px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 623px;
+    left: 146px;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 15px;
+    opacity: 1;
+    text-align: left;
+  }
+  .v1_542 {
+    width: 95px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 741px;
+    left: 147px;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 15px;
+    opacity: 1;
+    text-align: left;
+  }
+  .v1_543 {
+    width: 95px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 387px;
+    left: 265px;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 15px;
+    opacity: 1;
+    text-align: left;
+  }
+  .v1_544 {
+    width: 95px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 505px;
+    left: 263px;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 15px;
+    opacity: 1;
+    text-align: left;
+  }
+  .v1_545 {
+    width: 95px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 623px;
+    left: 263px;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 15px;
+    opacity: 1;
+    text-align: left;
+  }
+  .v1_546 {
+    width: 95px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 741px;
+    left: 264px;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 15px;
+    opacity: 1;
+    text-align: left;
+  }
+  .v1_547 {
+    width: 127px;
+    height: 50px;
+    background: url("../images/v1_547.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 170px;
+    left: 250px;
+    overflow: hidden;
+  }
+  .v1_548 {
+    width: 105px;
+    height: 25px;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border: 1px solid rgba(0,0,0,1);
+    overflow: hidden;
+  }
+  .v1_549 {
+    width: 71px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 3px;
+    left: 38px;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 15px;
+    opacity: 1;
+    text-align: left;
+  }
+  .v1_550 {
+    width: 21px;
+    height: 25px;
+    background: rgba(217,217,217,1);
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 105px;
+    border: 1px solid rgba(0,0,0,1);
+    overflow: hidden;
+  }
+  .v1_551 {
+    width: 10px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 18px;
+    left: 100px;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 24px;
+    opacity: 1;
+    text-align: center;
+    transform: rotate(-90deg);
+  }
+  .v4_593 {
+    width: 360px;
+    height: 30px;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: absolute;
+    top: 250px;
+    left: 0px;
+    border: 1px solid rgba(0,0,0,1);
+    overflow: hidden;
+  }
+  .v4_594 {
+    width: 358px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 257px;
+    left: 2px;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 15px;
+    opacity: 1;
+    text-align: center;
+  }
+  .v4_1482 {
+    width: 132px;
+    color: rgba(255,255,255,1);
+    position: absolute;
+    top: 17px;
+    left: 228px;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 12px;
+    opacity: 1;
+    text-align: left;
+  }
+  </style>

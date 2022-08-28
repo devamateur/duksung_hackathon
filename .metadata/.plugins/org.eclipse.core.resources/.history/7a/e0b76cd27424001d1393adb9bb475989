@@ -1,0 +1,17 @@
+package com.example.demo.model;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
+@Data
+public class FoodEntity {
+	private String foodId;   // 음식 id
+	private String foodName;   // 음식 이름
+	private String price;      // 가격
+	private String category;   // 카테고리(일식, 한식...)
+}

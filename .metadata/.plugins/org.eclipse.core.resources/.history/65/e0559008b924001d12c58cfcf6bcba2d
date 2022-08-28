@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/eca5e2617c.js" crossorigin="anonymous"></script>
+    <style>
+        a { text-decoration: none; color: black; }
+        a:visited { text-decoration: none; }
+        a:hover { text-decoration: none; }
+        a:focus { text-decoration: none; }
+        a:hover, a:active { text-decoration: none; }
+        ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 200px;
+        background-color:white;
+        }
+        li a {
+            display: block;
+            color: #000;
+            padding: 8px 16px;
+            text-decoration: none;
+            height:40px;
+            text-align: center;
+            line-height: 40px;
+        }
+        
+        li a:hover:not(.active) {
+            background-color: #555;
+            color: white;
+        }
+        #MenuBar{
+          display:none;
+        }
+
+        .v1_70{
+          text-align:right;
+          background: rgba(148,7,63,1);
+          color:white;
+          padding-right:15px;
+          height:56px;
+          line-height: 56px;
+        }
+        </style>
+
+    </head>
+    <body>
+      <div class="v1_98">
+        <ul id="MenuBar" style="position:fixed; z-index:1; ">
+          <li><div class="v1_70" ><i class="fa-solid fa-xmark fa-4x"onclick="hideDetail()"></i></div></li>
+          <li><a href="menu_order_ramen.html">메뉴/주문</a></li>
+          <li><a href="filtering.html">필터링</a></li>
+          <li><a href="community.html">커뮤니티</a></li>
+          <li><a href="q_a.html">Q&A</a></li>
+        </ul>
+        <div class="v1_99">
+
+        </div>
+        <div class="v1_100">
+
+        </div>
+        <div id="v1_9">
+          <i class="fa-solid fa-bars fa-2x"  onclick="displayDetail()"></i>
+        </div>
+          <div class="v1_105">
+            <i class="fa-solid fa-magnifying-glass fa-2x"></i>
+          </div>
+            <div class="v1_109">
+
+            </div>
+            <div class="v1_112">
+
+            </div>
+            <div class="v1_113" onclick="location.href='main.html'" style="cursor:pointer;">
+            </div>
+            <div class="v1_114">
+
+            </div>
+            <div class="v1_136">
+
+            </div>
+            <div class="v1_134">
+
+            </div>
+            <div class="v1_137">
+
+            </div>
+            <div class="v1_135">
+
+            </div>
+            <div class="v1_138">
+
+            </div>
+            <span class="v1_117" onclick="location.href='login.html'" style="cursor:pointer;">로그인</span>
+            <span class="v1_118">회원가입</span>
+            <span class="v1_130">메뉴/주문</span>
+            <span class="v1_140"><a href="menu_order_ramen.html">라멘</a></span>
+            <span class="v1_143"><a href="menu_order_bunsik.html">분식</a></span>
+            <span class="v1_141"><a href="menu_order_il-yang.html">일식 양식</a></span>
+            <span class="v1_144"><a href="menu_order_han-hae.html">한식 해장국</a></span>
+            <span class="v1_142"><a href="menu_order_han-deob.html">한식 덮밥</a></span>
+            
+            <div class="v1_146">
+
+            </div>
+            <div class="v1_152">
+
+            </div>
+            <div class="v1_158">
+
+            </div>
+            <div class="v1_164">
+
+            </div>
+            <div class="v1_147">
+
+            </div>
+            <div class="v1_153"></div>
+            <div class="v1_159"></div>
+            <div class="v1_165"></div>
+            <div class="v1_148"></div>
+            <div class="v1_154"></div>
+            <div class="v1_160"></div>
+            
+            <span class="v1_149">불닭마요덮밥</span>
+            <a href="order_detail_deop.html"><img src="이미지/덮밥_불닭마요덮밥.png" class="v1_146"></a>
+            <span class="v1_155">오징어덮밥</span>
+            <img src="이미지/덮밥_오징어덮밥.png" class="v1_152">
+            <span class="v1_161">불닭덮밥</span>
+            <img src="이미지/덮밥_불닭덮밥.png" class="v1_158">
+            <span class="v1_167">된장찌개</span>
+            <img src="이미지/덮밥_된장찌개.png" class="v1_164">
+            <span class="v1_150">참치마요덮밥</span>
+            <img src="이미지/덮밥_참치마요덮밥.png" class="v1_147">
+            <span class="v1_156">야채비빔밥</span>
+            <img src="이미지/덮밥_야채비빔밥.png" class="v1_153">
+            <span class="v1_162">돼지김치찌개</span>
+            <img src="이미지/덮밥_돼지김치찌개.png" class="v1_159">
+            <span class="v1_168">차돌된장찌개</span>
+            <img src="이미지/덮밥_차돌된장찌개.png" class="v1_165">
+            <span class="v1_151">제육덮밥</span>
+            <img src="이미지/덮밥_제육덮밥.png" class="v1_148">
+            <span class="v1_157">소불고기덮밥</span>
+            <img src="이미지/덮밥_소불고기덮밥.png" class="v1_154">
+            <span class="v1_163">부대찌개</span>
+            <img src="이미지/덮밥_부대찌개.png" class="v1_160">
+            
+            </div>
+            <script>
+		
+              function displayDetail(){
+                var MenuBar=document.getElementById("MenuBar");
+                MenuBar.style.display="block";
+                var Bar=document.getElementById("v1_9");
+                Bar.style.display="none";
+              }
+          
+              function hideDetail(){
+                var MenuBar=document.getElementById("MenuBar");
+                MenuBar.style.display="none";
+                var Bar=document.getElementById("v1_9");
+                Bar.style.display="block";
+              }
+          
+              
+          
+              
+            </script>
+    </body>
+</html>
+            <br/><br/> 
+            <style>* {
+              box-sizing: border-box;
+            }
+            body {
+              font-size: 14px;
+            }
+            .v1_98 {
+              width: 360px;
+              height: 1024px;
+              background: rgba(255,255,255,1);
+              opacity: 1;
+              position: relative;
+              top: 0px;
+              left: 0px;
+              overflow: hidden;
+            }
+            .v1_99 {
+              width: 208px;
+              height: 50px;
+              background: rgba(217,217,217,1);
+              opacity: 1;
+              position: absolute;
+              top: 65px;
+              left: 76px;
+              overflow: hidden;
+            }
+            .v1_100 {
+              width: 360px;
+              height: 40px;
+              background: rgba(148,7,63,1);
+              opacity: 1;
+              position: relative;
+              top: 0px;
+              left: 0px;
+              overflow: hidden;
+            }
+            .v1_101 {
+                width: 30px;
+            height: 25px;
+            
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            opacity: 1;
+            position: absolute;
+            top: 77px;
+            left: 15px;
+            overflow: hidden;
+            }
+            .v1_102 {
+              width: 18px;
+              height: 3px;
+              background: rgba(0,0,0,1);
+              opacity: 1;
+              position: relative;
+              top: 0px;
+              left: 0px;
+              overflow: hidden;
+            }
+            .v1_103 {
+              width: 18px;
+              height: 3px;
+              background: rgba(0,0,0,1);
+              opacity: 1;
+              position: absolute;
+              top: 6px;
+              left: 0px;
+              overflow: hidden;
+            }
+            .v1_104 {
+              width: 18px;
+              height: 3px;
+              background: rgba(0,0,0,1);
+              opacity: 1;
+              position: absolute;
+              top: 12px;
+              left: 0px;
+              overflow: hidden;
+            }
+            .v1_105 {
+                width: 35px;
+            height: 28px;
+            
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            opacity: 1;
+            position: absolute;
+            top: 75px;
+            left: 305px;
+            overflow: hidden;
+            }
+            .v1_106 {
+              width: 4px;
+              height: 13px;
+              background: rgba(0,0,0,1);
+              opacity: 1;
+              position: absolute;
+              top: 18px;
+              left: 16px;
+              border: 2px solid rgba(0,0,0,1);
+              transform: rotate(-38deg);
+            }
+            .v1_107 {
+              width: 21px;
+              height: 21px;
+              background: rgba(0,0,0,1);
+              opacity: 1;
+              position: relative;
+              top: 0px;
+              left: 0px;
+              border-radius: 50%;
+            }
+            .v1_108 {
+              width: 20px;
+              height: 20px;
+              background: rgba(255,255,255,1);
+              opacity: 1;
+              position: absolute;
+              top: 1px;
+              left: 1px;
+              border-radius: 50%;
+            }
+            .v1_109 {
+              width: 360px;
+              height: 553px;
+              background: rgba(255,255,255,1);
+              opacity: 1;
+              position: absolute;
+              top: 250px;
+              left: 0px;
+              border: 1px solid rgba(0,0,0,1);
+              overflow: hidden;
+            }
+            .v1_112 {
+              width: 360px;
+              height: 100px;
+              background: rgba(217,217,217,1);
+              opacity: 1;
+              position: absolute;
+              top: 924px;
+              left: 0px;
+              overflow: hidden;
+            }
+            .v1_113 {
+              width: 210px;
+              height: 59px;
+              background: url("ds_logo.png");
+              background-repeat: no-repeat;
+              background-position: center center;
+              background-size: cover;
+              opacity: 1;
+              position: absolute;
+              top: 61px;
+              left: 75px;
+              overflow: hidden;
+            }
+            .v1_114 {
+              width: 120px;
+              height: 30px;
+              background: rgba(255,255,255,1);
+              opacity: 1;
+              position: absolute;
+              top: 220px;
+              left: 0px;
+              border: 1px solid rgba(0,0,0,1);
+              overflow: hidden;
+            }
+            .v1_136 {
+              width: 120px;
+              height: 30px;
+              background: rgba(255,255,255,1);
+              opacity: 1;
+              position: absolute;
+              top: 250px;
+              left: 0px;
+              border: 1px solid rgba(0,0,0,1);
+              overflow: hidden;
+            }
+            .v1_134 {
+              width: 120px;
+              height: 30px;
+              background: rgba(255,255,255,1);
+              opacity: 1;
+              position: absolute;
+              top: 220px;
+              left: 120px;
+              border: 1px solid rgba(0,0,0,1);
+              overflow: hidden;
+            }
+            .v1_137 {
+              width: 120px;
+              height: 30px;
+              background: rgba(255,255,255,1);
+              opacity: 1;
+              position: absolute;
+              top: 250px;
+              left: 120px;
+              border: 1px solid rgba(0,0,0,1);
+              overflow: hidden;
+            }
+            .v1_135 {
+              width: 120px;
+              height: 30px;
+              background: rgba(217,217,217,1);
+              opacity: 1;
+              position: absolute;
+              top: 220px;
+              left: 240px;
+              border: 1px solid rgba(0,0,0,1);
+              overflow: hidden;
+            }
+            .v1_138 {
+              width: 120px;
+              height: 30px;
+              background: rgba(255,255,255,1);
+              opacity: 1;
+              position: absolute;
+              top: 250px;
+              left: 240px;
+              border: 1px solid rgba(0,0,0,1);
+              overflow: hidden;
+            }
+            .v1_117 {
+              width: 56px;
+              color: rgba(255,255,255,1);
+              position: absolute;
+              top: 17px;
+              left: 228px;
+              font-family: Inter;
+              font-weight: Regular;
+              font-size: 12px;
+              opacity: 1;
+              text-align: center;
+            }
+            .v1_118 {
+              width: 56px;
+              color: rgba(255,255,255,1);
+              position: absolute;
+              top: 17px;
+              left: 285px;
+              font-family: Inter;
+              font-weight: Regular;
+              font-size: 12px;
+              opacity: 1;
+              text-align: center;
+            }
+            .v1_130 {
+              width: 30vw;
+              color: rgba(0,0,0,1);
+              position: absolute;
+              top: 171px;
+              left: 19px;
+              font-family: Inter;
+              font-weight: Regular;
+              font-size: 6vw;
+              opacity: 1;
+              text-align: left;
+            }
+            .v1_140 {
+              width: 123px;
+              color: rgba(0,0,0,1);
+              position: absolute;
+              top: 228px;
+              left: 48px;
+              font-family: Inter;
+              font-weight: Regular;
+              font-size: 15px;
+              opacity: 1;
+              text-align: left;
+            }
+            .v1_143 {
+              width: 123px;
+              color: rgba(0,0,0,1);
+              position: absolute;
+              top: 258px;
+              left: 48px;
+              font-family: Inter;
+              font-weight: Regular;
+              font-size: 15px;
+              opacity: 1;
+              text-align: left;
+            }
+            .v1_141 {
+              width: 123px;
+              color: rgba(0,0,0,1);
+              position: absolute;
+              top: 228px;
+              left: 152px;
+              font-family: Inter;
+              font-weight: Regular;
+              font-size: 15px;
+              opacity: 1;
+              text-align: left;
+            }
+            .v1_144 {
+              width: 123px;
+              color: rgba(0,0,0,1);
+              position: absolute;
+              top: 258px;
+              left: 145px;
+              font-family: Inter;
+              font-weight: Regular;
+              font-size: 15px;
+              opacity: 1;
+              text-align: left;
+            }
+            .v1_142 {
+              width: 123px;
+              color: rgba(0,0,0,1);
+              position: absolute;
+              top: 228px;
+              left: 270px;
+              font-family: Inter;
+              font-weight: Regular;
+              font-size: 15px;
+              opacity: 1;
+              text-align: left;
+            }
+            .v1_145 {
+              width: 123px;
+              color: rgba(0,0,0,1);
+              position: absolute;
+              top: 258px;
+              left: 258px;
+              font-family: Inter;
+              font-weight: Regular;
+              font-size: 15px;
+              opacity: 1;
+              text-align: left;
+            }
+            .v1_146 {
+              width: 72px;
+              height: 72px;
+              background: rgba(217,217,217,1);
+              opacity: 1;
+              position: absolute;
+              top: 307px;
+              left: 30px;
+              border-radius: 50%;
+            }
+            .v1_152 {
+              width: 72px;
+              height: 72px;
+              background: rgba(217,217,217,1);
+              opacity: 1;
+              position: absolute;
+              top: 425px;
+              left: 28px;
+              border-radius: 50%;
+            }
+            .v1_158 {
+              width: 72px;
+              height: 72px;
+              background: rgba(217,217,217,1);
+              opacity: 1;
+              position: absolute;
+              top: 543px;
+              left: 28px;
+              border-radius: 50%;
+            }
+            .v1_164 {
+              width: 72px;
+              height: 72px;
+              background: rgba(217,217,217,1);
+              opacity: 1;
+              position: absolute;
+              top: 661px;
+              left: 29px;
+              border-radius: 50%;
+            }
+            .v1_147 {
+              width: 72px;
+              height: 72px;
+              background: rgba(217,217,217,1);
+              opacity: 1;
+              position: absolute;
+              top: 307px;
+              left: 142px;
+              border-radius: 50%;
+            }
+            .v1_153 {
+              width: 72px;
+              height: 72px;
+              background: rgba(217,217,217,1);
+              opacity: 1;
+              position: absolute;
+              top: 425px;
+              left: 140px;
+              border-radius: 50%;
+            }
+            .v1_159 {
+              width: 72px;
+              height: 72px;
+              background: rgba(217,217,217,1);
+              opacity: 1;
+              position: absolute;
+              top: 543px;
+              left: 140px;
+              border-radius: 50%;
+            }
+            .v1_165 {
+              width: 72px;
+              height: 72px;
+              background: rgba(217,217,217,1);
+              opacity: 1;
+              position: absolute;
+              top: 661px;
+              left: 141px;
+              border-radius: 50%;
+            }
+            .v1_148 {
+              width: 72px;
+              height: 72px;
+              background: rgba(217,217,217,1);
+              opacity: 1;
+              position: absolute;
+              top: 307px;
+              left: 254px;
+              border-radius: 50%;
+            }
+            .v1_154 {
+              width: 72px;
+              height: 72px;
+              background: rgba(217,217,217,1);
+              opacity: 1;
+              position: absolute;
+              top: 425px;
+              left: 252px;
+              border-radius: 50%;
+            }
+            .v1_160 {
+              width: 72px;
+              height: 72px;
+              background: rgba(217,217,217,1);
+              opacity: 1;
+              position: absolute;
+              top: 543px;
+              left: 252px;
+              border-radius: 50%;
+            }
+            .v1_166 {
+              width: 72px;
+              height: 72px;
+              background: rgba(217,217,217,1);
+              opacity: 1;
+              position: absolute;
+              top: 661px;
+              left: 253px;
+              border-radius: 50%;
+            }
+            .v1_149 {
+              width: 95px;
+              color: rgba(0,0,0,1);
+              position: absolute;
+              top: 387px;
+              left: 37px;
+              font-family: Inter;
+              font-weight: Regular;
+              font-size: 15px;
+              opacity: 1;
+              text-align: left;
+            }
+            .v1_155 {
+              width: 95px;
+              color: rgba(0,0,0,1);
+              position: absolute;
+              top: 505px;
+              left: 35px;
+              font-family: Inter;
+              font-weight: Regular;
+              font-size: 15px;
+              opacity: 1;
+              text-align: left;
+            }
+            .v1_161 {
+              width: 95px;
+              color: rgba(0,0,0,1);
+              position: absolute;
+              top: 623px;
+              left: 35px;
+              font-family: Inter;
+              font-weight: Regular;
+              font-size: 15px;
+              opacity: 1;
+              text-align: left;
+            }
+            .v1_167 {
+              width: 95px;
+              color: rgba(0,0,0,1);
+              position: absolute;
+              top: 741px;
+              left: 36px;
+              font-family: Inter;
+              font-weight: Regular;
+              font-size: 15px;
+              opacity: 1;
+              text-align: left;
+            }
+            .v1_150 {
+              width: 95px;
+              color: rgba(0,0,0,1);
+              position: absolute;
+              top: 387px;
+              left: 148px;
+              font-family: Inter;
+              font-weight: Regular;
+              font-size: 15px;
+              opacity: 1;
+              text-align: left;
+            }
+            .v1_156 {
+              width: 95px;
+              color: rgba(0,0,0,1);
+              position: absolute;
+              top: 505px;
+              left: 146px;
+              font-family: Inter;
+              font-weight: Regular;
+              font-size: 15px;
+              opacity: 1;
+              text-align: left;
+            }
+            .v1_162 {
+              width: 95px;
+              color: rgba(0,0,0,1);
+              position: absolute;
+              top: 623px;
+              left: 146px;
+              font-family: Inter;
+              font-weight: Regular;
+              font-size: 15px;
+              opacity: 1;
+              text-align: left;
+            }
+            .v1_168 {
+              width: 95px;
+              color: rgba(0,0,0,1);
+              position: absolute;
+              top: 741px;
+              left: 147px;
+              font-family: Inter;
+              font-weight: Regular;
+              font-size: 15px;
+              opacity: 1;
+              text-align: left;
+            }
+            .v1_151 {
+              width: 95px;
+              color: rgba(0,0,0,1);
+              position: absolute;
+              top: 387px;
+              left: 265px;
+              font-family: Inter;
+              font-weight: Regular;
+              font-size: 15px;
+              opacity: 1;
+              text-align: left;
+            }
+            .v1_157 {
+              width: 95px;
+              color: rgba(0,0,0,1);
+              position: absolute;
+              top: 505px;
+              left: 263px;
+              font-family: Inter;
+              font-weight: Regular;
+              font-size: 15px;
+              opacity: 1;
+              text-align: left;
+            }
+            .v1_163 {
+              width: 95px;
+              color: rgba(0,0,0,1);
+              position: absolute;
+              top: 623px;
+              left: 263px;
+              font-family: Inter;
+              font-weight: Regular;
+              font-size: 15px;
+              opacity: 1;
+              text-align: left;
+            }
+            .v1_169 {
+              width: 95px;
+              color: rgba(0,0,0,1);
+              position: absolute;
+              top: 741px;
+              left: 264px;
+              font-family: Inter;
+              font-weight: Regular;
+              font-size: 15px;
+              opacity: 1;
+              text-align: left;
+            }
+            </style>

@@ -1,0 +1,24 @@
+package com.example.demo.security;
+
+import java.time.Instant;
+import java.time.temporal.ChronoUnit;
+import java.util.Date;
+
+import org.springframework.stereotype.Service;
+
+import com.example.demo.model.UserEntity;
+
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
+@Service
+public class TokenProvider {
+	private static final String SECRET_KEY = "NMA8JPctFuna59f5";
+	
+	public String create(UserEntity userEntity) {
+		// ±‚«— 1¿œ
+		Date expiryDate = Date.from(Instant.now().plus(1, ChronoUnit.DAYS));
+		
+		return Jwts.builder()
+	}
+}

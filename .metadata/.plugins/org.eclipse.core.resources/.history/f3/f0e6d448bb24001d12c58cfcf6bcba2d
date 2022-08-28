@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
+        <script src="https://kit.fontawesome.com/eca5e2617c.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="v4_907">
+            <div class="v4_908"></div>
+            <div class="v4_909"></div>
+            <div class="v4_910"></div>
+            <span class="v4_912">아이디/비밀번호</span>
+            <span class="v4_913"><input type="checkbox">아이디/비밀번호 저장</span>
+            <div class="v4_915" onclick="location.href='main.html'" style="cursor:pointer;"></div>
+            <div class="v4_916"></div>
+            <span class="v4_917">로그인</span>
+            <div class="v4_918"></div>
+            <span class="v4_956">00000000</span>
+            <span class="v4_957">********</span>
+        </div>
+    </body>
+</html> 
+<br/><br/> <style>* {
+    box-sizing: border-box;
+  }
+  body {
+    font-size: 14px;
+  }
+  .v4_907 {
+    width: 360px;
+    height: 800px;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+  }
+  .v4_908 {
+    width: 248px;
+    height: 40px;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: absolute;
+    top: 268px;
+    left: 56px;
+    border: 1px solid rgba(136,136,136,1);
+    overflow: hidden;
+  }
+  .v4_909 {
+    width: 248px;
+    height: 40px;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: absolute;
+    top: 320px;
+    left: 56px;
+    border: 1px solid rgba(136,136,136,1);
+    overflow: hidden;
+  }
+  .v4_910 {
+    width: 248px;
+    height: 50px;
+    background: rgba(148,7,63,1);
+    opacity: 1;
+    position: absolute;
+    top: 381px;
+    left: 58px;
+    overflow: hidden;
+  }
+  .v4_912 {
+    width: 192px;
+    color: rgba(136,136,136,1);
+    position: absolute;
+    top: 234px;
+    left: 65px;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 20px;
+    opacity: 1;
+    text-align: left;
+  }
+  .v4_913 {
+    width: 192px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 448px;
+    left: 60px;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 15px;
+    opacity: 1;
+    text-align: left;
+  }
+  .v4_915 {
+    width: 207px;
+    height: 59px;
+    background: url("ds_logo.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 154px;
+    left: 76px;
+    overflow: hidden;
+  }
+  .v4_916 {
+    width: 234px;
+    height: 5px;
+    background: rgba(0,0,0,1);
+    opacity: 1;
+    position: absolute;
+    top: 217px;
+    left: 65px;
+    overflow: hidden;
+  }
+  .v4_917 {
+    width: 65px;
+    color: rgba(255,255,255,1);
+    position: absolute;
+    top: 395px;
+    left: 152px;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 20px;
+    opacity: 1;
+    text-align: center;
+  }
+  .v4_918 {
+    width: 20px;
+    height: 20px;
+    opacity: 1;
+    position: absolute;
+    top: 444px;
+    left: 56px;
+  }
+  .v4_956 {
+    width: 123px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 281px;
+    left: 65px;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 16px;
+    opacity: 1;
+    text-align: left;
+  }
+  .v4_957 {
+    width: 123px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 333px;
+    left: 66px;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 15px;
+    opacity: 1;
+    text-align: left;
+  }
+  </style>
