@@ -1,7 +1,0 @@
-package com.example.demo.persistence;
-
-import org.springframework.data.jpa.repository.JpaRepository;
-
-public class OrderRepository implements JpaRepository<T, ID> {
-
-}
